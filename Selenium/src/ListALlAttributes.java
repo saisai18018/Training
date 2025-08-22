@@ -22,7 +22,7 @@ public class ListALlAttributes {
 
              // 1. Open target website
 
-            driver.get("https://portfolio-git-main-saisai18018s-projects.vercel.app/");
+            driver.get("http://127.0.0.1:5500/Form/index.html");
 
             driver.manage().window().maximize();
  
@@ -89,6 +89,35 @@ public class ListALlAttributes {
                 System.out.println(para.getText());
 
             }
+            
+            Thread.sleep(25000);
+            
+            WebElement empNameElement = driver.findElement(By.name("empName"));
+            String ename_value = empNameElement.getAttribute("value");
+            
+            WebElement empId = driver.findElement(By.name("empId"));
+            String empId_vlaue = empId.getAttribute("value");
+            
+            WebElement gmail = driver.findElement(By.name("email"));
+            String gmail_value = gmail.getAttribute("value");
+            
+            WebElement dob = driver.findElement(By.name("dob"));
+            String dob_value = dob.getAttribute("value");
+            
+            WebElement address = driver.findElement(By.name("address"));
+            String address_value = address.getAttribute("value");
+            
+            WebElement mobile = driver.findElement(By.name("mobile"));
+            String mobile_value = mobile.getAttribute("value");
+            
+            System.out.println("Employee Name Value: " + ename_value);
+            System.out.println("Employee ID Value: " + empId_vlaue);
+            System.out.println("Employee gmail Value: " + gmail_value);
+            System.out.println("Employee dob Value: " + dob_value);
+            System.out.println("Employee address Value: " + address_value);
+            System.out.println("Employee phone Value: " + mobile_value);
+
+            		 
  
         } catch (Exception e) {
 

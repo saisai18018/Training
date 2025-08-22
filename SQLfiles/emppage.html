@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 15px;
+            font-size: 22px;
+        }
+        .login-box, .dashboard {
+            background: white;
+            width: 300px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005fa3;
+        }
+        #dashboard {
+            display: none; /* hidden initially */
+        }
+    </style>
+    <script>
+        function login() {
+            // Simple fake login action
+            document.querySelector(".login-box").style.display = "none";
+            document.getElementById("dashboard").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header>Employee Page</header>
+
+    <div class="login-box" id="login">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="Password" id="password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="dashboard" id="dashboard">
+        <h2>Welcome to Dashboard</h2>
+        <p>Employee information and controls appear here.</p>
+    </div>
+</body>
+</html>
