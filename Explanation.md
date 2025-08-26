@@ -1000,3 +1000,535 @@ Explain: It’s a measure of delivery capacity.
 18.	Which methodology uses Kanban boards?
 Answer: D – Kanban
 Explain: Kanban visualizes workflow on boards.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**File Handling and JDBC**
+
+1. Which class is used to read data from a file?
+✅ A. FileReader
+Explanation: FileReader reads character data from a file. FileInputStream is for binary data.
+
+2. Which class is used to write data into a file?
+✅ C. FileWriter
+Explanation: FileWriter writes character data, while FileOutputStream writes binary data.
+
+3. Which method is used to read a single character from a FileReader?
+✅ C. read()
+Explanation: read() returns an integer (Unicode value) representing the next character.
+
+4. Which of the following is not a class for file handling?
+✅ D. FileRequest
+Explanation: No class called FileRequest in Java.
+
+5. What does the File.exists() method do?
+✅ B. Checks if the file exists
+Explanation: Returns true if file/directory exists, otherwise false.
+
+6. What is the return type of read() method in FileReader?
+✅ C. int
+Explanation: It returns int (ASCII/Unicode value) or -1 at EOF.
+
+7. Which exception must be handled while working with files in Java?
+✅ C. IOException
+Explanation: File operations may throw IOException.
+
+8. Which of the following is used to create a new file?
+✅ C. createNewFile()
+Explanation: File.createNewFile() creates a new empty file if it does not exist.
+
+9. File handling in Java is part of which package?
+✅ C. java.io
+Explanation: All file I/O classes are inside java.io.
+
+10. What is the purpose of BufferedReader?
+✅ C. To read text efficiently
+Explanation: Provides buffering for faster reading of characters/lines.
+
+11. Which method is used to close a file?
+✅ C. close()
+Explanation: Always close file streams to release resources.
+
+12. FileWriter writes data in:
+✅ B. Character form
+Explanation: FileWriter is for writing characters.
+
+13. What is the default buffer size for BufferedReader?
+✅ B. 8192
+Explanation: Default buffer size is 8 KB (8192 chars).
+
+14. Which method reads a line from the file?
+✅ B. readLine()
+Explanation: BufferedReader.readLine() reads one line at a time.
+
+15. What does File.length() return?
+✅ C. File size in bytes
+Explanation: Returns size of file in bytes, not characters or lines.
+
+16. Which keyword is used to handle file exceptions?
+✅ C. try-catch
+Explanation: Exceptions are handled using try-catch.
+
+17. To write binary data, we should use:
+✅ A. FileOutputStream
+Explanation: For binary data, use byte streams (FileInputStream, FileOutputStream).
+
+18. Which class allows both reading and writing to a random access file?
+✅ C. RandomAccessFile
+Explanation: It supports both read/write from any position.
+
+19. Which method is used to delete a file?
+✅ B. delete()
+Explanation: File.delete() removes a file/directory.
+
+20. What does flush() do in FileWriter?
+✅ B. Clears stream buffer
+Explanation: Flush forces data from buffer to file.
+
+21. Which stream handles primitive data types?
+✅ C. DataOutputStream
+Explanation: DataOutputStream writes primitive types in binary format.
+
+22. Which of the following is a checked exception?
+✅ B. IOException
+Explanation: IOException is checked, others are runtime exceptions.
+
+23. Which class is used to serialize an object?
+✅ C. ObjectOutputStream
+Explanation: Used to serialize (convert object to byte stream).
+
+24. Which class is used to deserialize an object?
+✅ B. ObjectInputStream
+Explanation: Used to read serialized objects back.
+
+25. Which method is used to check if it is a directory?
+✅ C. isDirectory()
+Explanation: File.isDirectory() returns true if it’s a folder.
+
+JDBC
+
+26. What does JDBC stand for?
+✅ C. Java Database Connectivity
+Explanation: API to connect Java applications with databases.
+
+27. Which package contains JDBC classes?
+✅ B. java.sql
+Explanation: JDBC interfaces (Connection, Statement, etc.) are in java.sql.
+
+28. Which interface is used to execute SQL queries?
+✅ C. Statement
+Explanation: Statement executes SQL queries.
+
+29. What is the purpose of DriverManager?
+✅ B. Manage JDBC drivers
+Explanation: Loads drivers and establishes database connections.
+
+30. Which method is used to load a driver?
+✅ A. Class.forName()
+Explanation: Dynamically loads driver class.
+
+31. Which method establishes a connection to the database?
+✅ B. getConnection()
+Explanation: DriverManager.getConnection() opens a DB connection.
+
+32. Which of the following executes a SQL SELECT query?
+✅ B. executeQuery()
+Explanation: Returns a ResultSet containing rows.
+
+33. Which method is used for INSERT, UPDATE or DELETE?
+✅ B. executeUpdate()
+Explanation: Returns affected row count.
+
+34. What is the return type of executeQuery()?
+✅ B. ResultSet
+Explanation: Query results are returned as ResultSet.
+
+35. What is ResultSet?
+✅ B. Object holding result of query
+Explanation: Contains table-like query results.
+
+36. Which interface provides methods for transaction management?
+✅ A. Connection
+Explanation: Connection manages transactions (commit, rollback).
+
+37. What does setAutoCommit(false) do?
+✅ C. Manual transaction management
+Explanation: Disables auto-commit mode → transactions must be committed manually.
+
+38. Which method is used to commit a transaction?
+✅ B. commit()
+Explanation: Saves all changes permanently.
+
+39. Which method is used to rollback a transaction?
+✅ C. rollback()
+Explanation: Reverts changes since last commit.
+
+40. How to prevent SQL injection?
+✅ B. Use PreparedStatement
+Explanation: It uses parameterized queries → avoids injection.
+
+41. Which of these is a sub-interface of Statement?
+✅ A. PreparedStatement
+Explanation: Extends Statement with precompiled SQL and parameters.
+
+42. Which method in PreparedStatement is used to set integer value?
+✅ B. setInt()
+Explanation: Example: ps.setInt(1, 100);
+
+43. What does next() in ResultSet do?
+✅ B. Moves to next row
+Explanation: Cursor moves to next row; returns false if no more rows.
+
+44. What is JDBC driver?
+✅ B. Interface to connect Java to DB
+Explanation: A driver translates JDBC calls into database-specific calls.
+
+45. Which type of JDBC driver is Pure Java driver?
+✅ B. Type-4
+Explanation: Type-4 is fully Java and communicates directly with DB.
+
+46. How many types of JDBC drivers are there?
+✅ C. 4
+Explanation: Type-1 (ODBC), Type-2 (Native), Type-3 (Network), Type-4 (Pure Java).
+
+47. Which method is used to close a Connection?
+✅ B. close()
+Explanation: con.close() releases DB resources.
+
+48. Can we execute multiple queries in a Statement object?
+✅ A. Yes
+Explanation: Statement can execute multiple SQL queries sequentially.
+
+49. Which JDBC driver type translates JDBC calls to native calls?
+✅ B. Type-2
+Explanation: Uses native DB libraries.
+
+50. Which JDBC driver is best suited for web-based applications?
+✅ D. Type-4
+Explanation: Platform independent, pure Java, fast for web apps.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**Wrapper class**
+
+Which of the following is not a wrapper class in Java?
+Answer: String
+Explanation: Only primitives have wrappers; String isn’t one.
+
+Wrapper classes are part of which Java package?
+Answer: java.lang
+Explanation: All wrappers (Integer, Double, etc.) live in java.lang.
+
+Which method is used to convert a String to an int using a wrapper class?
+Answer: Integer.parseInt()
+Explanation: Returns a primitive int from a numeric string.
+
+Which of these is the correct way to create an Integer object in Java?
+Answer: Integer.valueOf(10)
+Explanation: valueOf returns an Integer object (preferred over constructors).
+
+What will Integer.valueOf("123") return?
+Answer: Integer object with value 123
+Explanation: valueOf(String) parses and returns the wrapper object.
+
+What is the size (in bits) of the Integer wrapper class?
+Answer: 32
+Explanation: It wraps a 32-bit int value.
+
+Which of the following is true about autoboxing?
+Answer: Converting primitive to wrapper automatically
+Explanation: e.g., Integer i = 5;.
+
+Unboxing refers to:
+Answer: Converting wrapper to primitive
+Explanation: e.g., int x = i; from Integer i.
+
+Which statement is valid?
+Answer: Integer a = 5;
+Explanation: Autoboxing assigns primitive to wrapper.
+
+Which wrapper class wraps a char primitive?
+Answer: Character
+Explanation: Character wraps char.
+
+What is the output of Integer.parseInt("123abc")?
+Answer: NumberFormatException
+Explanation: Non-numeric suffix causes parsing to fail.
+
+Which method converts a wrapper object to a string?
+Answer: toString()
+Explanation: Produces the textual form of the value.
+
+Which of the following is not a method in the Integer class?
+Answer: parseString()
+Explanation: No such method; parseInt, valueOf, toString exist.
+
+Which wrapper class represents boolean values?
+Answer: Boolean
+Explanation: Wrapper for boolean.
+
+Which method is used to convert an Integer to int?
+Answer: intValue()
+Explanation: Extracts the primitive from the wrapper.
+
+What is returned by Double.valueOf("3.14")?
+Answer: Double object with value 3.14
+Explanation: Parses string and returns Double.
+
+Autoboxing was introduced in which Java version?
+Answer: Java 1.5
+Explanation: Added with generics and enhanced features (Java 5).
+
+Which method converts a string to a float primitive?
+Answer: Float.parseFloat()
+Explanation: Returns primitive float.
+
+Which method is used to compare two wrapper objects?
+Answer: equals()
+Explanation: Compares values; == compares references (except caches).
+
+What will new Integer(128) == new Integer(128) return?
+Answer: false
+Explanation: Different objects; == checks reference equality.
+
+What will Integer i = 100; Integer j = 100; i == j return?
+Answer: true
+Explanation: Integers in range −128..127 are cached and reference-equal.
+
+What will Integer i = 200; Integer j = 200; i == j return?
+Answer: false
+Explanation: 200 is outside cache; different objects.
+
+What is the range of values cached by Integer wrapper in Java?
+Answer: -128 to 127
+Explanation: Default cache range per JLS (configurable but this is standard).
+
+Which method returns a primitive value from the wrapper object?
+Answer: intValue()
+Explanation: xxxValue() methods return primitives.
+
+Which of the following are immutable?
+Answer: Wrapper classes
+Explanation: Their values can’t change after creation.
+
+Boolean wrapper class can store how many distinct values?
+Answer: 2
+Explanation: true or false.
+
+What is the wrapper class for short primitive type?
+Answer: Short
+Explanation: Wrapper for short.
+
+Which wrapper class is used for long data type?
+Answer: Long
+Explanation: Wrapper for long.
+
+What will new Boolean("true") return?
+Answer: true
+Explanation: Case-insensitive "true" yields true; anything else false.
+
+What is the output of Boolean.parseBoolean("TRUE")?
+Answer: true
+Explanation: parseBoolean is case-insensitive for "true".
+
+----------------------------------------------------------------------------------------------
+
+Which of the following allows duplicate elements?
+✅ b) List
+🔹 Explanation: List allows duplicates and maintains insertion order. Set and Map do not allow duplicate keys/elements.
+
+Which class implements the List interface using a dynamic array?
+✅ c) ArrayList
+🔹 Explanation: ArrayList is backed by a dynamic array, whereas LinkedList uses nodes, and Vector is synchronized.
+
+Which method inserts an element at a specific position in a List?
+✅ b) add(index, element)
+🔹 Explanation: add(int index, E element) inserts at a specific position. addFirst() is for Deque, push() for Stack, and insert() doesn’t exist.
+
+What happens if you add a null element to an ArrayList?
+✅ c) Null is added
+🔹 Explanation: ArrayList allows multiple null elements, unlike TreeSet or Hashtable.
+
+Which method returns the number of elements in a list?
+✅ c) size()
+🔹 Explanation: size() gives element count. getSize() and sizeOf() do not exist.
+
+What is the default initial capacity of an ArrayList?
+✅ b) 10
+🔹 Explanation: When created with no arguments, ArrayList starts with capacity 10.
+
+What is returned by list.get(0)?
+✅ c) Element at index 0
+🔹 Explanation: get(int index) returns the element stored at that index.
+
+Which of these allows bidirectional iteration of a list?
+✅ b) ListIterator
+🔹 Explanation: Iterator only supports forward iteration; ListIterator supports both directions.
+
+Which class provides thread-safe implementation of List?
+✅ b) Vector
+🔹 Explanation: Vector is synchronized; ArrayList is not.
+
+Which list method replaces the element at a specific index?
+✅ b) set(index, element)
+🔹 Explanation: set() replaces the element, while add() inserts.
+
+Set interface does not allow:
+✅ c) Duplicate elements
+🔹 Explanation: By definition, Set stores only unique elements.
+
+Which class maintains insertion order in a Set?
+✅ b) LinkedHashSet
+🔹 Explanation: LinkedHashSet maintains insertion order, while HashSet and TreeSet don’t.
+
+Which Set implementation stores elements in a sorted manner?
+✅ b) TreeSet
+🔹 Explanation: TreeSet sorts elements according to natural ordering or comparator.
+
+Which of the following is not allowed in a TreeSet?
+✅ c) Null elements
+🔹 Explanation: TreeSet does not allow null because it uses comparisons.
+
+Which class uses hashing for storage in a Set?
+✅ c) HashSet
+🔹 Explanation: HashSet uses hash table internally.
+
+Which method removes all elements from a Set?
+✅ b) clear()
+🔹 Explanation: clear() removes all elements.
+
+What is the time complexity of contains() in a HashSet?
+✅ c) O(1) (on average)
+🔹 Explanation: Hash-based lookup is constant-time on average.
+
+How many null elements can a HashSet contain?
+✅ c) One
+🔹 Explanation: HashSet allows only one null.
+
+What does the add() method return if element already exists in Set?
+✅ c) False
+🔹 Explanation: add() returns false if the element already exists.
+
+Which class is best for fast access without duplicates?
+✅ c) HashSet
+🔹 Explanation: HashSet is optimized for quick lookups and ensures uniqueness.
+
+What is stored in a Map?
+✅ c) Key-value pairs
+🔹 Explanation: Maps store entries as key-value pairs.
+
+Can a Map contain duplicate keys?
+✅ b) No
+🔹 Explanation: Keys must be unique; values can be duplicated.
+
+What is the result of put() if the key already exists?
+✅ b) Replaces the old value
+🔹 Explanation: put() replaces the value for an existing key.
+
+Which Map implementation maintains natural key ordering?
+✅ b) TreeMap
+🔹 Explanation: TreeMap sorts keys in natural or comparator order.
+
+Which Map allows one null key and multiple null values?
+✅ b) HashMap
+🔹 Explanation: HashMap permits one null key and multiple null values.
+
+Which method is used to get a value for a given key?
+✅ c) get(key)
+🔹 Explanation: get() retrieves the value for the given key.
+
+Which class maintains insertion order in a Map?
+✅ b) LinkedHashMap
+🔹 Explanation: LinkedHashMap preserves insertion order.
+
+What is the time complexity of get() in HashMap?
+✅ c) O(1) (average)
+🔹 Explanation: Hash-based retrieval is constant-time in average cases.
+
+Which Map class is synchronized?
+✅ b) Hashtable
+🔹 Explanation: Hashtable is synchronized, unlike HashMap.
+
+Which method removes a key-value pair from a Map?
+✅ b) remove(key)
+🔹 Explanation: remove(Object key) deletes the entry.
+
+What does Comparable interface define?
+✅ b) compareTo()
+🔹 Explanation: Comparable defines int compareTo(Object o) for natural ordering.
+
+Comparable is used for:
+✅ c) Natural ordering
+🔹 Explanation: Defines ordering within the class itself.
+
+Which package includes Comparable interface?
+✅ b) java.lang
+🔹 Explanation: Core package java.lang contains Comparable.
+
+Comparator interface has:
+✅ c) compare()
+🔹 Explanation: Comparator defines int compare(Object o1, Object o2).
+
+Which interface allows custom sorting outside the class?
+✅ b) Comparator
+🔹 Explanation: Comparator provides external ordering.
+
+Comparator can be used to:
+✅ b) Define multiple sort sequences
+🔹 Explanation: Different comparators can sort objects differently.
+
+Method signature of compare() in Comparator?
+✅ b) compare(T o1, T o2)
+🔹 Explanation: Returns int comparing two objects.
+
+What is returned if two objects are equal in compareTo()?
+✅ c) 0
+🔹 Explanation: compareTo() returns 0 for equality.
+
+Which is true for Comparable?
+✅ c) Defines natural order inside class
+🔹 Explanation: Implemented inside the class to provide default sorting.
+
+How can Comparator be implemented?
+✅ c) Functional interface
+🔹 Explanation: Comparator is a functional interface (since Java 8).
+
+Which method returns all keys from a Map?
+✅ c) keySet()
+🔹 Explanation: keySet() returns a Set of all keys.
+
+Which method is used to iterate a List?
+✅ c) iterator()
+🔹 Explanation: iterator() returns an Iterator.
+
+Which class is ideal for LIFO structure?
+✅ b) Stack
+🔹 Explanation: Stack follows Last-In-First-Out.
+
+Which method is used to sort a List?
+✅ b) Collections.sort()
+🔹 Explanation: Collections.sort(list) sorts based on natural order or comparator.
+
+Which collection has predictable iteration order?
+✅ b) LinkedHashSet
+🔹 Explanation: Maintains predictable iteration (insertion order).
+
+Which interface does not extend Collection?
+✅ c) Map
+🔹 Explanation: Map is separate from Collection hierarchy.
+
+What is returned by contains() if the element exists?
+✅ c) true
+🔹 Explanation: contains() returns a boolean.
+
+Which class provides constant-time performance for basic operations like add, remove, contains?
+✅ c) HashSet
+🔹 Explanation: HashSet operations are O(1) average.
+
+What happens when HashMap has two objects with same hashCode()?
+✅ c) Stored using equals() check
+🔹 Explanation: HashMap checks equals() to resolve collisions.
+
+Which method retrieves all values in a Map?
+✅ c) values()
+🔹 Explanation: values() returns a collection of all values.

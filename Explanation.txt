@@ -228,4 +228,59 @@ Exp: In Java projects, JUnit is commonly used with Cucumber to execute feature f
 
 **Exp: Setting alwaysRun=true ensures the test executes even if the dependent methods fail or get skipped.** 
 
+------------------------------------------------------------------------------------------------------------------------------
+
+1.	List allows duplicate elements while Set and Map don’t.
+2.	ArrayList is backed by a dynamic array.
+3.	add(index, element) inserts at a specific position.
+4.	ArrayList allows multiple null elements.
+5.	size() returns the number of elements.
+6.	Default capacity of ArrayList is 10.
+7.	get(0) returns the element at index 0.
+8.	ListIterator supports bidirectional iteration.
+9.	Vector is thread-safe, unlike ArrayList. It is a legacy class and it is synchronized, which makes it thread-safe.
+10.	set(index, element) replaces an element.
+11.	Set does not allow duplicates.
+12.	LinkedHashSet maintains insertion order.
+13.	TreeSet stores elements in sorted order.
+14.	TreeSet does not allow null.
+15.	HashSet uses hashing for storage. 0(1)
+16.	clear() removes all elements.
+17.	contains() in HashSet is O(1) average.
+18.	HashSet allows only one null.
+19.	add() returns false if element exists.
+20.	HashSet is best for fast access without duplicates.
+21.	Map stores key-value pairs.
+22.	Keys in a Map must be unique.
+23.	put() replaces old value if key exists.
+24.	TreeMap maintains natural key order.
+25.	HashMap allows one null key and multiple null values.
+26.	get(key) retrieves value for a key.
+27.	LinkedHashMap preserves insertion order.
+28.	get() in HashMap is O(1) average.
+29.	Hashtable is synchronized.
+30.	remove(key) deletes a key-value pair.
+31.	Comparable defines compareTo().
+32.	Used for natural ordering inside the class.
+33.	Comparable is in java.lang.
+34.	Comparator defines compare(). It is a functional interface which have only one abstract method that is compare() used for custom sorting.
+35.	Comparator allows custom (external) sorting.
+36.	Can define multiple sort sequences.
+37.	Method: compare(T o1, T o2).
+38.	compareTo() returns 0 if objects are equal.
+39.	Comparable defines natural order inside class.
+40.	Comparator is a functional interface.
+41.	keySet() returns all keys.
+42.	iterator() is used to traverse a list.
+43.	Stack is used for LIFO structure.
+44.	Collections.sort() sorts a list. For generic class we need to use comparator or comparable interface as well.
+45.	LinkedHashSet has predictable iteration order.
+46.	Map does not extend Collection Interface.
+47.	contains() returns true if element exists.
+48.	HashSet gives constant-time operations (average), and default is 0(1).
+49.	HashMap resolves collisions with equals().
+50.	values() returns all values in a Map.
+
+
+
                                             
