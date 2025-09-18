@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-01T16:49:12 IST" name="Default suite" finished-at="2025-09-01T16:49:49 IST" duration-ms="36881">
+    <groups>
+    </groups>
+    <test started-at="2025-09-01T16:49:12 IST" name="Default test" finished-at="2025-09-01T16:49:49 IST" duration-ms="36881">
+      <class name="tests.HomePageTests">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:12 IST" name="setupExtent" finished-at="2025-09-01T16:49:12 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtent -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:12 IST" name="setUp" finished-at="2025-09-01T16:49:17 IST" duration-ms="4598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFormSelectionsAndFileUpload()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:17 IST" name="testFormSelectionsAndFileUpload" finished-at="2025-09-01T16:49:24 IST" duration-ms="6593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormSelectionsAndFileUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:24 IST" name="tearDown" finished-at="2025-09-01T16:49:24 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:24 IST" name="setUp" finished-at="2025-09-01T16:49:28 IST" duration-ms="3852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMultipleFileUpload()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:28 IST" name="testMultipleFileUpload" finished-at="2025-09-01T16:49:36 IST" duration-ms="8088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleFileUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:36 IST" name="tearDown" finished-at="2025-09-01T16:49:37 IST" duration-ms="1671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:37 IST" name="setUp" finished-at="2025-09-01T16:49:41 IST" duration-ms="3648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSingleFileUpload()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:41 IST" name="testSingleFileUpload" finished-at="2025-09-01T16:49:49 IST" duration-ms="8061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSingleFileUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:49 IST" name="tearDown" finished-at="2025-09-01T16:49:49 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownExtent()[pri:0, instance:tests.HomePageTests@45c7e403]" started-at="2025-09-01T16:49:49 IST" name="tearDownExtent" finished-at="2025-09-01T16:49:49 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownExtent -->
+      </class> <!-- tests.HomePageTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

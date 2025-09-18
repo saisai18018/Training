@@ -5,5 +5,7 @@ Feature: User validation with list
       | Sai   |
       | Bharath |
       | Kotha  |
+      | Divya  |
+      | Meghana  |
     When I process the usernames
-    Then I should see 3 usernames processed
+    Then I should see 5 usernames processed

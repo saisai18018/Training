@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+ <Appenders>
+   <!-- Console logs -->
+   <Console name="ConsoleAppender" target="SYSTEM_OUT">
+     <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+   </Console>
+
+   <!-- File logs -->
+   <RollingFile name="FileLogger"
+                fileName="logs/app.log"
+                filePattern="logs/app-%d{yyyy-MM-dd}-%i.log.gz">
+     <PatternLayout>
+       <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
+     </PatternLayout>
+     <Policies>
+       <TimeBasedTriggeringPolicy />
+       <SizeBasedTriggeringPolicy size="5MB"/>
+     </Policies>
+   </RollingFile>
+ </Appenders>
+
+ <Loggers>
+   <!-- Custom Logger -->
+   <Logger name="com.myapp" level="debug" additivity="false">
+     <AppenderRef ref="FileLogger"/>
+   </Logger>
+
+   <!-- Root Logger -->
+   <Root level="info">
+     <AppenderRef ref="ConsoleAppender"/>
+     <AppenderRef ref="FileLogger"/>
+   </Root>
+ </Loggers>
+</Configuration>

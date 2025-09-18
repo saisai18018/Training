@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/your-username/demo-app.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
+
+        stage('Run') {
+            steps {
+                sh 'java -cp target/demo-app-1.0-SNAPSHOT.jar com.example.App'
+            }
+        }
+    }
+}

@@ -289,7 +289,8 @@ Q20. In JUnit 5, what is the correct way to assert that a list is not empty?
 
 **Exp: Setting alwaysRun=true ensures the test executes even if the dependent methods fail or get skipped.** 
                                             
---------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------
+
 
 **JIRA**
 
@@ -1532,3 +1533,1056 @@ What happens when HashMap has two objects with same hashCode()?
 Which method retrieves all values in a Map?
 ✅ c) values()
 🔹 Explanation: values() returns a collection of all values.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**Jenkins**
+
+1. What is Jenkins primarily used for?
+
+✅ Answer: B. Continuous integration and continuous delivery
+Explanation: Jenkins automates building, testing, and deploying software through CI/CD pipelines, ensuring faster and more reliable delivery.
+
+2. Jenkins is written in which programming language?
+
+✅ Answer: C. Java
+Explanation: Jenkins is developed in Java, which allows it to run on multiple platforms with JVM support.
+
+3. Which of the following is a default port used by Jenkins?
+
+✅ Answer: D. 8080
+Explanation: Jenkins runs on port 8080 by default after installation unless configured otherwise.
+
+4. Jenkins supports which of the following features?
+
+✅ Answer: D. All of the above
+Explanation: Jenkins supports distributed builds, plugins, and integration with various tools (Git, Maven, Docker, etc.).
+
+5. Which of the following is not a Jenkins pipeline type?
+
+✅ Answer: C. Manual
+Explanation: Jenkins pipelines are Declarative and Scripted. Manual is not a pipeline type.
+
+6. Which file defines a pipeline in a Jenkins project?
+
+✅ Answer: C. Jenkinsfile
+Explanation: A Jenkinsfile is a text file that defines a pipeline as code in Jenkins.
+
+7. Which plugin is used for integrating Git with Jenkins?
+
+✅ Answer: B. Git plugin
+Explanation: The Git plugin allows Jenkins to pull source code from Git repositories.
+
+8. What does CI in Jenkins CI stand for?
+
+✅ Answer: C. Continuous Integration
+Explanation: CI stands for Continuous Integration, where code is merged and tested frequently.
+
+9. Which one of these is NOT a valid build trigger in Jenkins?
+
+✅ Answer: C. Code Analyzer
+Explanation: Valid triggers include Poll SCM, Build periodically, GitHub hook trigger. "Code Analyzer" is not a trigger type.
+
+10. Which build tool is most commonly used with Jenkins for Java projects?
+
+✅ Answer: B. Maven
+Explanation: Maven is the most popular Java build tool, commonly integrated with Jenkins.
+
+11. Jenkins supports which of the following scripting languages for pipelines?
+
+✅ Answer: B. Groovy
+Explanation: Jenkins pipelines are written in Groovy-based DSL (Domain-Specific Language).
+
+12. In Jenkins, a “Freestyle Project” is used to:
+
+✅ Answer: B. Define simple build jobs
+Explanation: Freestyle projects allow simple job configurations (build, test, deploy) without pipeline code.
+
+13. Which one is the Jenkins configuration directory by default?
+
+✅ Answer: C. /var/lib/jenkins
+Explanation: On Linux systems, Jenkins stores all configuration and job data in /var/lib/jenkins.
+
+14. Which of the following command is used to start Jenkins manually?
+
+✅ Answer: C. java -jar jenkins.war
+Explanation: Jenkins can be started manually using its WAR file with this command.
+
+15. Jenkins is distributed under which license?
+
+✅ Answer: A. MIT
+Explanation: Jenkins is open-source and licensed under the MIT license.
+
+16. Which environment is Jenkins most commonly used in?
+
+✅ Answer: B. DevOps
+Explanation: Jenkins is a core tool in DevOps for automating CI/CD pipelines.
+
+17. To run jobs in parallel in Jenkins, you need:
+
+✅ Answer: B. Multiple executors or agents
+Explanation: Jenkins can run jobs in parallel using multiple executors or distributed agents.
+
+18. Which of the following best describes a Jenkins “agent”?
+
+✅ Answer: C. A node that executes jobs
+Explanation: An agent is a worker node that executes jobs assigned by the Jenkins master/controller.
+
+19. Which of the following can Jenkins integrate with?
+
+✅ Answer: D. All of the above
+Explanation: Jenkins integrates with GitHub, Docker, Slack, AWS, Maven, Kubernetes, and more.
+
+20. What is the term for a Jenkins job that starts based on changes in the source code repository?
+
+✅ Answer: B. Triggered build
+Explanation: A build automatically triggered by source code changes is a triggered build (via SCM polling or webhooks).
+
+21. Which plugin helps in creating Jenkins pipelines visually?
+
+✅ Answer: C. Blue Ocean plugin
+Explanation: Blue Ocean plugin provides a modern, visual interface for creating and managing pipelines.
+
+22. How does Jenkins communicate with build agents?
+
+✅ Answer: B. Via SSH or JNLP
+Explanation: Jenkins connects to agents using SSH or JNLP (Java Network Launch Protocol).
+
+23. Which operating systems support Jenkins?
+
+✅ Answer: D. All of the above
+Explanation: Jenkins supports Linux, Windows, and macOS since it runs on Java.
+
+24. Which one is a valid method of installing Jenkins?
+
+✅ Answer: D. All of the above
+Explanation: Jenkins can be installed via Docker, WAR file, or package managers (apt/yum).
+
+25. Which keyword starts a pipeline block in a Jenkins declarative pipeline?
+
+✅ Answer: C. pipeline
+Explanation: A declarative pipeline always starts with the keyword pipeline { }.
+
+26. Which Jenkins plugin helps manage credentials securely?
+
+✅ Answer: B. Credentials plugin
+Explanation: The Credentials plugin allows storing and managing secrets securely.
+
+27. The master in Jenkins architecture is responsible for:
+
+✅ Answer: B. Scheduling jobs and managing agents
+Explanation: The Jenkins master (controller) schedules jobs and distributes them to agents.
+
+28. Which Jenkins feature enables restoring previous configurations or builds?
+
+✅ Answer: A. Backup plugin
+Explanation: The Backup plugin helps restore Jenkins configurations and build history.
+
+29. How can you secure Jenkins?
+
+✅ Answer: D. All of the above
+Explanation: Security is enforced by authentication, user permissions, and security plugins.
+
+30. Which option best describes Jenkins Pipeline as Code?
+
+✅ Answer: C. Writing pipeline configuration in a Jenkinsfile
+Explanation: Pipeline-as-Code means storing pipeline definitions in a Jenkinsfile within the project repo.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**OOPS**
+
+1. What is a class in Java?
+
+✅ Answer: b) A blueprint for objects
+Explanation: A class defines properties (fields) and behaviors (methods) that objects can have. Objects are instances of classes.
+
+2. Which keyword is used to create an object in Java?
+
+✅ Answer: b) new
+Explanation: The new keyword allocates memory and creates an object. Example: Student s = new Student();
+
+3. Which of the following is not a primitive data type in Java?
+
+✅ Answer: c) String
+Explanation: String is a class in Java, not a primitive type. Primitive types include int, double, char, boolean, etc.
+
+4. Which access modifier makes variables accessible only within the same class?
+
+✅ Answer: c) private
+Explanation: private members can only be accessed within the same class.
+
+5. What is the purpose of encapsulation?
+
+✅ Answer: b) To hide data and provide controlled access
+Explanation: Encapsulation bundles data with methods and hides internal details, allowing only controlled access via getters/setters.
+
+6. Which keyword is used to define a constant in Java?
+
+✅ Answer: b) final
+Explanation: The final keyword makes variables constants, methods non-overridable, and classes non-inheritable.
+
+7. What is the default value of a boolean variable in Java?
+
+✅ Answer: b) false
+Explanation: By default, boolean instance variables are initialized to false.
+
+8. What does the this keyword refer to?
+
+✅ Answer: b) Current class instance
+Explanation: this refers to the current object of the class. Example: this.name = name;.
+
+9. Which variable type is shared among all instances of a class?
+
+✅ Answer: c) static
+Explanation: A static variable is common for all objects of the class.
+
+10. Which of the following best defines abstraction?
+
+✅ Answer: b) Hiding implementation details and showing essential features
+Explanation: Abstraction focuses on exposing only necessary details and hiding implementation.
+
+11. Which keyword is used to define an abstract class in Java?
+
+✅ Answer: c) abstract
+Explanation: The abstract keyword declares abstract classes and methods.
+
+12. What happens when you try to instantiate an abstract class?
+
+✅ Answer: a) Compilation error
+Explanation: Abstract classes cannot be directly instantiated; they must be subclassed.
+
+13. Abstraction is achieved in Java using:
+
+✅ Answer: b) Abstract classes and interfaces
+Explanation: Both abstract classes and interfaces provide abstraction.
+
+14. Inheritance allows:
+
+✅ Answer: c) Code reusability
+Explanation: Inheritance enables reusing methods and properties of parent classes.
+
+15. Which keyword is used to inherit a class in Java?
+
+✅ Answer: b) extends
+Explanation: extends is used for class inheritance.
+
+16. What type of inheritance does Java support?
+
+✅ Answer: a) Single and multilevel
+Explanation: Java supports single, hierarchical, and multilevel inheritance but not multiple inheritance via classes.
+
+17. The base class in Java from which every class is derived is:
+
+✅ Answer: b) Object
+Explanation: The Object class is the parent of all classes in Java.
+
+18. If a class is final, what does it mean?
+
+✅ Answer: a) It cannot be subclassed
+Explanation: A final class cannot be extended (e.g., String class).
+
+19. A subclass can call a superclass constructor using:
+
+✅ Answer: b) super()
+Explanation: super() is used to call the parent class constructor.
+
+20. What is method overriding?
+
+✅ Answer: b) Redefining a superclass method in a subclass
+Explanation: Method overriding occurs when a subclass provides its own implementation of a superclass method.
+
+21. What is polymorphism?
+
+✅ Answer: c) Same interface, different behavior
+Explanation: Polymorphism allows one interface to be used for different underlying forms (method overriding/overloading).
+
+22. Method overloading is an example of:
+
+✅ Answer: b) Compile-time polymorphism
+Explanation: Overloading is resolved at compile time.
+
+23. Which of the following is true about method overriding?
+
+✅ Answer: b) It occurs in subclass with same method signature
+Explanation: Overriding requires same method name and signature in parent and child classes.
+
+24. What is a characteristic of a final method?
+
+✅ Answer: a) It cannot be overridden
+Explanation: Declaring a method final prevents overriding.
+
+25. A method without a body must be:
+
+✅ Answer: c) abstract
+Explanation: Abstract methods are declared without a body and must be implemented in subclasses.
+
+26. An abstract class:
+
+✅ Answer: b) Can have both abstract and concrete methods
+Explanation: Abstract classes may contain both abstract and fully defined methods.
+
+27. Which is not allowed in an interface prior to Java 8?
+
+✅ Answer: c) Method bodies
+Explanation: Before Java 8, interfaces could only have abstract methods and constants.
+
+28. Which of these can be instantiated?
+
+✅ Answer: c) Concrete class
+Explanation: Only concrete classes (non-abstract, non-interface) can be instantiated.
+
+29. Which is true about interfaces in Java?
+
+✅ Answer: b) They support multiple inheritance
+Explanation: A class can implement multiple interfaces.
+
+30. Which interface feature was added in Java 8?
+
+✅ Answer: c) Default and static methods
+Explanation: Java 8 introduced default and static methods in interfaces.
+
+31. How do you implement an interface in Java?
+
+✅ Answer: b) implements
+Explanation: implements keyword is used to implement interfaces.
+
+32. What kind of methods can default methods in interfaces have?
+
+✅ Answer: c) Method body (implementation)
+Explanation: Default methods allow interfaces to provide method bodies.
+
+33. Functional interfaces must have:
+
+✅ Answer: b) Exactly one abstract method
+Explanation: A functional interface has exactly one abstract method (e.g., Runnable).
+
+34. Which annotation is used for functional interfaces?
+
+✅ Answer: b) @FunctionalInterface
+Explanation: @FunctionalInterface ensures an interface has only one abstract method.
+
+35. What is the main use of packages in Java?
+
+✅ Answer: c) Organizing classes and interfaces
+Explanation: Packages group related classes/interfaces to avoid name conflicts.
+
+36. Which keyword is used to import a package?
+
+✅ Answer: b) import
+Explanation: import keyword is used to include packages.
+
+37. Which package is automatically imported in every Java program?
+
+✅ Answer: b) java.lang
+Explanation: java.lang is auto-imported (contains classes like String, Math).
+
+38. What is the purpose of java.util package?
+
+✅ Answer: b) Data structures and utility classes
+Explanation: It provides classes like ArrayList, HashMap, Date, Collections, etc.
+
+39. Which is a built-in Java package?
+
+✅ Answer: b) java.net
+Explanation: java.net is part of Java standard library for networking.
+
+40. A class can belong to how many packages?
+
+✅ Answer: b) One
+Explanation: A class belongs to exactly one package.
+
+41. What is a lambda expression?
+
+✅ Answer: b) Anonymous function
+Explanation: A lambda is a short way to represent a function without a name.
+
+42. Which symbol is used in lambda syntax?
+
+✅ Answer: a) ->
+Explanation: Lambdas use the arrow operator ->.
+
+43. Lambda expressions are mostly used to implement:
+
+✅ Answer: b) Functional interfaces
+Explanation: They provide implementations for functional interfaces.
+
+44. Which Java version introduced lambda expressions?
+
+✅ Answer: b) Java 8
+Explanation: Lambdas were added in Java 8.
+
+45. What does a lambda replace in traditional Java?
+
+✅ Answer: c) Anonymous inner classes
+Explanation: Lambdas simplify anonymous class implementations.
+
+46. A valid lambda expression must be assigned to:
+
+✅ Answer: c) Functional interface reference
+Explanation: Lambdas are compatible only with functional interfaces.
+
+47. What is the benefit of lambdas?
+
+✅ Answer: b) Simplify code and improve readability
+Explanation: Lambdas reduce boilerplate code and improve clarity.
+
+48. What is the return type of a lambda expression?
+
+✅ Answer: c) Depends on the context
+Explanation: Return type is inferred from the functional interface it implements.
+
+49. Which functional interface is part of java.util.function?
+
+✅ Answer: b) Function<T, R>
+Explanation: The Function<T, R> interface takes an argument T and returns R.
+
+50. What is the output of (x) -> x * x when passed 5?
+
+✅ Answer: c) 25
+Explanation: The lambda squares the input, so 5 * 5 = 25.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**Abstraction**
+
+What is abstraction in Java?
+✅ a) Hiding the implementation details
+👉 Abstraction hides how things work internally and shows only what is exposed (methods/behavior).
+
+Which of these is true about abstract classes?
+✅ b) Cannot be instantiated
+👉 Abstract classes cannot be directly instantiated, they must be subclassed.
+
+Which keyword is used to create an abstract class in Java?
+✅ c) abstract
+👉 abstract keyword is used before class to declare it abstract.
+
+What does an abstract method contain?
+✅ c) Method signature only
+👉 Abstract methods don’t have a body; they only declare method signature.
+
+Can an abstract class have a constructor?
+✅ b) Yes
+👉 Abstract classes can have constructors, mainly to initialize fields when subclass objects are created.
+
+Can you declare a class abstract without any abstract method?
+✅ b) Yes
+👉 It’s valid. Abstract class can have only concrete methods as well, just prevents instantiation.
+
+Which of the following is true about interfaces?
+✅ b) Can contain abstract methods
+👉 Interfaces (before Java 8) had only abstract methods; after Java 8 they can have default & static too.
+
+From Java 8 onwards, what type of methods can an interface contain?
+✅ b) Abstract, default, and static methods
+👉 Java 8 introduced default & static methods in interfaces.
+
+What will happen if we try to instantiate an abstract class?
+✅ a) Compilation error
+👉 You can’t create objects of abstract classes.
+
+Which access modifier is allowed for methods in an interface?
+✅ b) public
+👉 All interface methods are public by default.
+
+**Packages**
+
+What is a package in Java?
+✅ b) A namespace for classes
+👉 Packages organize related classes & interfaces into a namespace.
+
+Which keyword is used to define a package in Java?
+✅ b) package
+👉 The package keyword defines a package.
+
+What is the default package in Java?
+✅ b) unnamed package
+👉 If no package is specified, the class belongs to the default (unnamed) package.
+
+How can we import all classes from a package?
+✅ a) import packagename.*
+👉 * imports all classes from that package.
+
+Which of the following is a valid package name?
+✅ c) mypackage
+👉 Package names must start with a letter, can’t have - or start with numbers.
+
+Which package is automatically imported in every Java program?
+✅ c) java.lang
+👉 java.lang is imported by default (String, Object, Math, etc. are inside it).
+
+Can a Java class belong to multiple packages?
+✅ b) No
+👉 A class can belong to only one package.
+
+What is the correct way to create a package?
+✅ c) package pack;
+👉 Syntax: package pack; at the top of file.
+
+Which is true about packages in Java?
+✅ c) Packages help avoid name conflicts
+👉 Packages group classes and prevent class name conflicts.
+
+Which package contains the Scanner class?
+✅ b) java.util
+👉 Scanner is inside java.util.
+
+**Exception Handling**
+
+What is an exception in Java?
+✅ b) An event that disrupts normal flow of program
+👉 Exception = runtime event that breaks program flow.
+
+Which is the base class for all exceptions in Java?
+✅ a) Throwable
+👉 Throwable → superclass of Exception and Error.
+
+What is the correct syntax of a try-catch block?
+✅ c) try { ... } catch(Exception e) { ... }
+👉 Correct structure for exception handling.
+
+Which exception is unchecked?
+✅ c) ArithmeticException
+👉 Unchecked exceptions = subclasses of RuntimeException.
+
+What will happen if an exception is not caught?
+✅ a) Program terminates abnormally
+👉 JVM halts program execution with stack trace.
+
+Which keyword is used to throw an exception manually?
+✅ d) throw
+👉 throw new ExceptionName();
+
+Which keyword is used to declare an exception in method signature?
+✅ b) throws
+👉 throws IOException in method declaration.
+
+What is the purpose of finally block?
+✅ c) To execute code regardless of exception
+👉 Always executes (even if exception occurs).
+
+Can we use multiple catch blocks with one try block?
+✅ b) Yes
+👉 Multiple catch blocks allowed, to handle different exceptions.
+
+What type of exceptions are checked at compile-time?
+✅ b) Checked exceptions
+👉 Checked exceptions (e.g., IOException) must be declared/caught.
+
+Can an abstract class implement an interface?
+✅ b) Yes
+👉 Abstract class can implement an interface, even partially.
+
+Which is NOT allowed in an interface?
+✅ a) Constructor
+👉 Interfaces cannot have constructors.
+
+Which package must be imported to handle file operations?
+✅ c) java.io
+👉 File handling = java.io.
+
+Which of these exceptions is thrown when array is accessed out of bounds?
+✅ b) ArrayIndexOutOfBoundsException
+👉 Accessing index outside valid range causes this.
+
+Is it mandatory to catch a checked exception?
+✅ b) Yes
+👉 Must be caught or declared in throws.
+
+Which class is a direct subclass of Throwable?
+✅ a) Error
+✅ b) Exception
+👉 Both are direct subclasses of Throwable. (If single answer expected → Exception).
+
+Can we override abstract methods?
+✅ b) Yes
+👉 Abstract methods must be overridden in subclass.
+
+Which is better for loose coupling in Java?
+✅ b) Interfaces
+👉 Interfaces provide best loose coupling.
+
+Which statement is true about the final keyword?
+✅ b) final methods cannot be overridden
+👉 Final prevents modification (methods cannot be overridden, classes cannot be extended, variables cannot be reassigned).
+
+What does the term "unchecked exception" mean?
+✅ a) Exception not checked at compile-time
+👉 They occur only at runtime.
+
+What happens if finally block has a return statement?
+✅ b) It overrides any previous return
+👉 Return in finally overrides other return statements.
+
+What will happen if both catch and finally have return statements?
+✅ c) Finally return wins
+👉 finally has the last say.
+
+Which exception occurs if a null object is used to call a method?
+✅ b) NullPointerException
+👉 Happens when object reference = null.
+
+What happens when a subclass doesn't override all abstract methods?
+✅ c) Compilation error
+👉 Subclass must either implement all abstract methods or be abstract itself.
+
+Which is true about multiple interfaces?
+✅ b) A class can implement multiple interfaces
+👉 Multiple inheritance via interfaces is allowed.
+
+Which keyword is used to prevent method overriding?
+✅ b) final
+👉 Final method cannot be overridden.
+
+What is the result of division by zero in integer arithmetic?
+✅ a) ArithmeticException
+👉 Integer division by zero causes this.
+
+Can we catch multiple exceptions in one catch block?
+✅ b) Yes, using | operator
+👉 Java 7+ allows multi-catch: catch (IOException | SQLException e).
+
+Which is true about the throw keyword?
+✅ b) Can throw only one exception at a time
+👉 Only one exception object can be thrown.
+
+What is the return type of an abstract method?
+✅ a) Any valid type
+👉 Abstract methods can have any return type.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**Testing**
+
+1. Software Testing Fundamentals
+
+Q1. What is the primary goal of software testing?
+✅ c) Detect defects
+Explanation: Testing ensures defects are found before release.
+
+Q2. Which of the following is a key benefit of testing?
+✅ d) Improves product quality
+Explanation: Testing improves reliability and user satisfaction.
+
+Q3. Which is NOT a reason to perform testing?
+✅ a) Add new features
+Explanation: Adding features is development, not testing.
+
+Q4. Who is responsible for software testing?
+✅ c) Everyone involved in development
+Explanation: Quality is a shared responsibility, not just testers.
+
+Q5. When should testing begin?
+✅ c) As early as possible
+Explanation: Early testing reduces cost and effort of fixing defects.
+
+2. Levels of Software Testing
+
+Q6. What is Unit Testing?
+✅ a) Testing individual components or functions
+
+Q7. Who usually performs unit testing?
+✅ d) Developers
+
+Q8. Integration Testing focuses on:
+✅ b) Interactions between modules
+
+Q9. What does System Testing validate?
+✅ c) Entire application behavior
+
+Q10. Acceptance Testing is done to:
+✅ a) Validate software against business requirements
+
+Q11. Main objective of Regression Testing?
+✅ b) Ensure changes don’t affect existing functionality
+
+Q12. Smoke Testing checks for:
+✅ a) Basic functionality stability
+
+Q13. Sanity Testing is performed when:
+✅ a) Small changes are made and need quick verification
+
+Q14. Alpha Testing is done by:
+✅ a) Internal users
+
+Q15. Beta Testing is performed by:
+✅ c) Real users in production environment
+
+3. Software Testing Techniques
+
+Q16. Black Box Testing focuses on:
+✅ b) System functionality without knowing internal code
+
+Q17. White Box Testing is concerned with:
+✅ a) Code logic and paths
+
+Q18. Boundary Value Analysis is:
+✅ a) A black box technique using edge values
+
+Q19. Equivalence Partitioning helps to:
+✅ a) Reduce test cases by grouping inputs
+
+Q20. Decision Table Testing is based on:
+✅ a) Business rules and decision combinations
+
+Q21. State Transition Testing checks:
+✅ a) Valid state changes based on inputs
+
+Q22. Statement Coverage is part of:
+✅ b) White box testing
+
+Q23. Cyclomatic Complexity measures:
+✅ b) Number of linearly independent paths
+
+Q24. What is Error Guessing?
+✅ a) Using tester’s intuition to find defects
+
+Q25. Exploratory Testing is:
+✅ a) Simultaneously learning, designing, and executing tests
+
+4. Types of Testing
+
+Q26. Functional Testing checks:
+✅ a) Whether software meets functional requirements
+
+Q27. Non-functional Testing includes:
+✅ a) Performance, usability, and security
+
+Q28. Usability Testing focuses on:
+✅ c) User experience
+
+Q29. Performance Testing involves:
+✅ b) Speed and responsiveness
+
+Q30. Load Testing helps to:
+✅ a) Measure system behavior under expected load
+
+Q31. Stress Testing checks:
+✅ a) System behavior under extreme load
+
+Q32. Security Testing ensures:
+✅ a) System is protected from unauthorized access
+
+Q33. Compatibility Testing is done to check:
+✅ a) How software works across browsers/devices/platforms
+
+Q34. Endurance Testing is also called:
+✅ a) Soak testing
+
+Q35. Volume Testing checks:
+✅ a) How system handles large volumes of data
+
+5. Test Planning and Design
+
+Q36. What is a Test Plan?
+✅ b) Document defining scope, approach, schedule, and resources
+
+Q37. Test Strategy defines:
+✅ a) Overall testing approach across all levels
+
+Q38. Test Scenario is:
+✅ a) High-level test condition derived from requirements
+
+Q39. What is a Test Case?
+✅ a) Set of conditions to determine if a feature works
+
+Q40. Good test cases should be:
+✅ c) Clear, concise, and repeatable
+
+Q41. Test Data is:
+✅ a) Input data used to execute test cases
+
+Q42. Traceability Matrix maps:
+✅ a) Requirements to test cases
+
+Q43. Test Environment setup includes:
+✅ a) Hardware, software, network configurations
+
+Q44. Which phase defines entry/exit criteria?
+✅ a) Test planning
+
+Q45. Review in testing is done to:
+✅ a) Identify defects early in documents or code
+
+6. Test Execution
+
+Q46. What happens during test execution?
+✅ b) Run test cases and log results
+
+Q47. Test Execution is based on:
+✅ a) Test plan and test cases
+
+Q48. A test log contains:
+✅ a) Execution details and outcomes
+
+Q49. A failed test case means:
+✅ a) Actual result ≠ expected result
+
+Q50. Re-testing is:
+✅ a) Running a failed test again after fixing defect
+
+7. Defect Management
+
+Q51. What is a defect?
+✅ a) Deviation from expected behavior
+
+Q52. Bug Life Cycle starts with:
+✅ a) New
+
+Q53. Who reports bugs?
+✅ a) Testers or users
+
+Q54. What is defect severity?
+✅ a) Impact on system functionality
+
+Q55. Defect priority means:
+✅ b) Urgency to fix the defect
+
+Q56. What is defect leakage?
+✅ a) Bug that escapes from testing to production
+
+Q57. Defect density is:
+✅ a) Number of defects per unit of code
+
+Q58. Reopened bug means:
+✅ b) Fixed bug failed in re-testing
+
+Q59. Status for a bug that won’t be fixed now?
+✅ b) Deferred
+
+Q60. Duplicate bug means:
+✅ a) Same bug reported more than once
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**Selenium**
+
+1. Which of the following is NOT a type of automation testing?
+✔️ C. Manual Testing
+👉 Manual testing is done without automation tools, so it is not a type of automation testing.
+
+2. Which component is used in Selenium for automating web browsers?
+✔️ A. WebDriver
+👉 WebDriver is the core API in Selenium that automates browser actions.
+
+3. What is the main purpose of TestNG in test automation?
+✔️ C. Test execution management
+👉 TestNG manages test execution, grouping, sequencing, reporting, and parallel execution.
+
+4. Which of the following is used for parameterized testing in JUnit 5?
+✔️ C. @ParameterizedTest
+👉 JUnit 5 provides @ParameterizedTest for running the same test with different input values.
+
+5. What does Log4j2 help with in a test automation framework?
+✔️ C. Logging application events
+👉 Log4j2 is used to log info, warnings, and errors during test execution.
+
+6. Which Selenium flavor allows you to write tests using a record-and-playback tool?
+✔️ D. Selenium IDE
+👉 Selenium IDE provides a record-and-playback feature for quick test creation.
+
+7. In TestNG, which annotation is used to run a method before every test method?
+✔️ C. @BeforeMethod
+👉 @BeforeMethod runs before each @Test method in a class.
+
+8. What is the purpose of Selenium Grid?
+✔️ B. Execute tests in parallel on multiple machines
+👉 Selenium Grid enables parallel test execution across different machines and browsers.
+
+9. Which of the following is a correct way to create a logger in Log4j2?
+✔️ B. Logger log = LogManager.getLogger();
+👉 In Log4j2, you create a logger using LogManager.getLogger().
+
+10. In Data-Driven Testing, test data is typically stored in:
+✔️ C. External files like Excel, CSV, or databases
+👉 DDT separates test data from scripts and stores it in external sources.
+
+11. Which annotation in JUnit 5 is used to run code after all tests in a class?
+✔️ B. @AfterAll
+👉 @AfterAll runs once after all test methods in the class.
+
+12. Which method in Selenium is used to fetch the title of the current web page?
+✔️ C. getTitle()
+👉 driver.getTitle() returns the page title.
+
+13. Which annotation in TestNG is used to skip a test case conditionally?
+✔️ C. @Test(enabled = false)
+👉 In TestNG, you skip tests by setting enabled=false.
+
+14. What is the output format supported by Log4j2 for writing logs?
+✔️ B. Plain text, JSON, XML
+👉 Log4j2 supports multiple formats like plain text, JSON, and XML.
+
+15. Which of the following allows you to run Selenium tests in different browsers and platforms simultaneously?
+✔️ C. Selenium Grid
+👉 Selenium Grid is designed for cross-browser, cross-platform testing.
+
+16. What kind of testing is best suited for Data-Driven Frameworks?
+✔️ B. Regression Testing
+👉 Regression testing benefits most from DDT since the same tests run with different datasets.
+
+17. In Selenium WebDriver, which command is used to interact with dropdowns?
+✔️ C. Select select = new Select(element)
+👉 Selenium provides the Select class to handle dropdowns (selectByValue, selectByVisibleText, etc.).
+
+18. In Log4j2, which configuration file is most commonly used?
+✔️ C. log4j2.xml
+👉 log4j2.xml is the standard configuration file for Log4j2.
+
+19. What is the purpose of DataProvider in TestNG?
+✔️ B. To supply multiple sets of test data to a test method
+👉 @DataProvider feeds multiple sets of test data to a single test method.
+
+20. Which JUnit 5 feature helps group multiple assertions?
+✔️ B. assertAll
+👉 assertAll lets you group multiple assertions so all are executed even if one fails.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**Selenium and Jira**
+
+🟢 Selenium MCQs – Explanations
+1.	Selenium is a browser automation tool – it automates browsers, not a language or test manager.
+2.	Supports multiple languages – Java, Python, C#, Ruby, JavaScript, etc., so correct is “all of the above.”
+3.	Selenium RC is deprecated – WebDriver replaced it.
+4.	WebDriver controls browser actions – clicking, typing, navigation, etc.
+5.	Selenium IDE is for record & playback – quick test creation.
+6.	Wait types: Implicit, Explicit, Fluent exist; “Sticky” does not.
+7.	Supported browsers: Chrome, Firefox, Safari, Edge, etc., so “all of the above.”
+8.	Selenium Grid – runs tests in parallel on multiple machines/browsers.
+9.	findElement() – returns a single WebElement.
+10.	click() – is the method to click buttons or elements.
+11.	sendKeys() – types text into input fields.
+12.	XPath – used to locate elements in XML/HTML structure.
+13.	ID – is the fastest locator (unique and direct).
+14.	driver.quit() – closes all browser windows & ends session.
+15.	NoSuchElementException – thrown if element not found.
+16.	switchTo().frame() – used to enter an iframe.
+17.	Actions class – handles advanced mouse actions.
+18.	switchTo().alert() – used for JavaScript alert handling.
+19.	XPath or CSS – used when no ID or name present.
+20.	findElements() – returns List<WebElement>.
+21.	getTitle() – returns the page’s title.
+22.	Selenium is open-source – free tool maintained by community.
+23.	Java requires JDK + IDE (Eclipse/IntelliJ) to run Selenium.
+24.	navigate().back() – moves browser back in history.
+25.	Mobile app testing – possible only with tools like Appium, not Selenium alone.
+26.	Selenium AI – not an official component.
+27.	driver.manage().window().maximize() – maximizes window.
+28.	Thread.sleep() – pauses execution for a fixed time.
+29.	XPath with contains/starts-with – best for dynamic elements.
+30.	Captcha – can’t be automated with Selenium (requires human verification).
+31.	getCurrentUrl() – returns current page URL.
+32.	Selenium doesn’t test APIs directly – external libraries/tools needed.
+33.	Windows popups – can’t be handled, need AutoIT/Robot tools.
+34.	Page Object Model – design pattern for maintainable test code.
+35.	PHP – not officially supported (Java, C#, Python, Ruby, JS are).
+36.	selectByVisibleText() – selects option from dropdown by visible text.
+37.	DesiredCapabilities – defines browser configurations/capabilities.
+38.	WebDriver – uses native browser automation APIs.
+39.	TestNG – testing framework integrated with Selenium.
+40.	Default implicit wait – is 0 seconds (not set by default).
+41.	Developed by open-source community – originally by Jason Huggins at ThoughtWorks.
+42.	driver.close() – closes only current window, not entire session.
+43.	Selenium can’t access DB directly – need JDBC, Hibernate, or external libs.
+44.	Actions.sendKeys() – used for keyboard actions.
+45.	Selenium Grid – enables parallel testing on multiple machines.
+________________________________________
+🟢 JIRA MCQs – Explanations
+1.	JIRA is just a name – originally from “Gojira” (Godzilla).
+2.	JIRA is for project management & issue tracking – mainly Agile-based.
+3.	Issue = task, bug, story, epic – fundamental work item in JIRA.
+4.	Epic = large body of work – broken into stories/tasks.
+5.	Sprint = time-boxed period – for completing work.
+6.	JQL – JIRA Query Language, used for searching/filtering.
+7.	Dashboard – overview of projects/issues with gadgets.
+8.	Story = user requirement/feature.
+9.	Supports Scrum & Kanban boards – both Agile styles.
+10.	Workflow = lifecycle steps of an issue (To Do → In Progress → Done).
+11.	Project creation – typically done by JIRA Admin.
+12.	Sub-task = smaller division of a task.
+13.	Resolved = completed but not closed yet.
+14.	Commit – not a default issue type in JIRA.
+15.	Backlog – pending items not added to a sprint.
+16.	Labels – used for categorizing issues.
+17.	Link issue function – relates issues (blocks, duplicates, etc.).
+18.	Kanban board – visualizes workflow, limits work in progress.
+19.	Assignee = person responsible for issue.
+20.	Custom fields – user-defined fields for extra data.
+21.	Closed = issue is done and verified.
+22.	Component = sub-section of project for grouping.
+23.	Transitions – allowed only by users with permissions.
+24.	Default priority – is “Medium.”
+25.	JIRA project types – Software, Business, Service Management (not Database).
+26.	Boards – visualize issues for Scrum/Kanban.
+27.	Reporter = issue creator.
+28.	Filter = saved search query.
+29.	Release Hub – manages versions and deployments.
+30.	Project Administrator – has full project-level permissions.
+31.	Burndown/Velocity charts – measure progress.
+32.	Version = release package of changes.
+33.	Plugin = add-on extending JIRA.
+34.	Issues can’t be assigned to multiple users (only one assignee).
+35.	Watchers – get notified on issue updates.
+36.	Move option – transfers issue to another project.
+37.	Time Tracking – logs estimated/actual time spent.
+38.	Resolution – reason why issue was closed (fixed, won’t fix, etc.).
+39.	Quick Filter – narrows board view quickly.
+40.	Clone – creates a duplicate issue.
+41.	Sprint Goal – defines objective for sprint.
+42.	Product Owner – owns backlog.
+43.	Scrum in JIRA – supports Agile project management.
+44.	Burndown Chart – shows remaining work over sprint.
+45.	CI/CD integration – possible (Jenkins, Bamboo, GitHub, etc.).
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+**JIRA one liners**
+
+1.	A workflow defines the lifecycle of an issue.
+2.	Yes, workflows can be customized.
+3.	A workflow transition is a movement between two statuses.
+4.	Yes, conditions can be added to transitions.
+5.	A post function is an action executed after a transition.
+6.	A status represents the current state of an issue.
+7.	Yes, workflows can be shared across projects.
+8.	A workflow scheme maps workflows to issue types.
+9.	Yes, different issue types can have different workflows.
+10.	Editing an active workflow affects issues using it.
+11.	A Scrum board is for managing sprints in Scrum.
+12.	A Kanban board visualizes continuous work in progress.
+13.	A sprint is a time-boxed iteration in Scrum.
+14.	Yes, both Scrum and Kanban can be used in one project.
+15.	A backlog is a list of pending work items.
+16.	A sprint starts by selecting backlog items and clicking "Start Sprint."
+17.	Velocity measures completed work per sprint.
+20.	Yes, Jira provides various Agile reports.
+21.	A permission scheme defines project permissions.
+22.	A role is project-specific, a group is global.
+23.	Yes, permissions can be set per project.
+24.	Project Administrators manage project settings.
+25.	Only Jira Administrators can edit permission schemes.
+26.	Yes, users can belong to multiple roles.
+27.	Browse Projects permission allows viewing a project.
+28.	Yes, issue visibility can be restricted by role.
+29.	By adding the user to the project role/group.
+30.	Yes, permissions can be inherited from groups.
+31.	Jira automation automates repetitive tasks.
+32.	Components are triggers, conditions, and actions.
+33.	Yes, rules can trigger on issue updates.
+34.	Yes, automation can auto-assign issues.
+36.	Yes, automation can send notifications.
+37.	Yes, automation can clone issues.
+39.	No, automation features vary by plan.
+40.	Yes, rules can be scheduled to run at specific times.
+
+
+18.	Yes, WIP limits can be set in Kanban boards.
+19.	Swimlanes group issues visually on boards.
+35.	A global rule applies across multiple projects.
+38.	A smart value is a dynamic variable in automation.
+
+
+
+
